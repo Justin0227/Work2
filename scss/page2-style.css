@@ -54,7 +54,6 @@ body {
 
 .header {
   max-width: 1366px;
-  height: 559px;
   margin: 0 auto;
   background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/53d3c0b0e4d2885789ac1fcb666e427365a39207/chatTalker_images/banner.svg);
   background-repeat: no-repeat;
@@ -97,6 +96,8 @@ body {
 }
 
 .header .content {
+  max-width: 1366px;
+  height: 559px;
   margin-left: 139px;
 }
 
@@ -139,7 +140,7 @@ body {
 }
 
 .container {
-  max-width: 1366px;
+  max-width: 67%;
   margin: 11px auto 0 auto;
 }
 
@@ -151,7 +152,7 @@ body {
 }
 
 .container .people-list {
-  width: 909px;
+  width: 67%;
   margin: 48px auto 0 auto;
   padding: 0 84px 0 89px;
   display: -webkit-box;
@@ -160,6 +161,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .container .people-list .people {
@@ -175,7 +178,7 @@ body {
 }
 
 .container .program {
-  width: 909px;
+  width: 67%;
   margin: 48px auto 100px auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -186,7 +189,7 @@ body {
 }
 
 .container .program .program-type {
-  width: 444px;
+  width: 48%;
   border: solid 1px #FFFFFF;
   -webkit-box-shadow: 0px 2px 10px #00000014;
           box-shadow: 0px 2px 10px #00000014;
@@ -198,16 +201,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .container .program .program-type h3 {
-  width: 444px;
   font-size: 24px;
   font-weight: bold;
   line-height: 36px;
@@ -237,9 +236,8 @@ body {
 }
 
 .container .program .program-type .program-text .set {
-  width: 169px;
-  height: 108px;
-  padding: 24px 0;
+  width: 50%;
+  padding: 24px;
   text-align: center;
   background-color: #F5F5F5;
   border: solid 1px #F5F5F5;
@@ -306,7 +304,7 @@ body {
 }
 
 .footer {
-  max-width: 1366px;
+  width: 100%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +370,7 @@ body {
 }
 
 .footer .expand .answer p {
+  width: 100%;
   font-size: 18px;
   line-height: 28px;
   color: #56C4C5;
@@ -383,12 +382,12 @@ body {
 }
 
 .footer .copyright-notice {
-  width: 1366px;
+  width: 100%;
   text-align: center;
   line-height: 24px;
   background-color: #F5F5F5;
   padding: 16px;
-  margin-top: 100px;
+  margin-top: 100px auto 0 auto;
 }
 
 @media (max-width: 375px) {
@@ -514,7 +513,6 @@ body {
   }
   .container .program .program-type .program-text .set {
     width: 45%;
-    height: 89px;
     padding: 16px 0;
   }
   .container .program .program-type .program-text .set .title {
